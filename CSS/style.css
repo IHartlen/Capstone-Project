@@ -1,0 +1,86 @@
+/*start page styling*/
+
+body{
+  font-size: 16px;
+  line-height: 32px;
+  background-color: #FBFCFE;
+}
+
+h1{
+  font-size: 3em;
+  text-align: center;
+}
+
+h2{
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/*header*/
+.header-flex{
+  display:flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-size: 1.5em;
+  background-color: #410B13;
+  color: #EBF2FA;
+}
+
+/*hamburger nav*/
+.overlay{
+  display:none;
+}
+
+
+
+/*banner*/
+.banner {
+  text-align: center;
+  line-height: 4em;
+  padding-top:5em;
+  padding-bottom:10em;
+}
+
+/*carousel*/
+.carousel{
+  display:flex;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+  background-color:  #3685B5;
+}
+.carousel-blurb{
+  width:50%;
+  flex:none;
+}
+.img-books{
+  /*max-width: 50%;*/
+  height: 15em;
+  margin:0.5em;
+}
+.more-thinkers{
+  background-color: #C5283D;
+  border:0.5em;
+}
+.more-thinkers a{
+  padding-left:4em;
+  padding-right:4em;
+  text-align:center;
+}
+.carousel-blurb h2{
+  text-align: left;
+  padding:2em;
+}
+
+/*Rates*/
+
+.rates h2{
+  margin:2em;
+}
+
+
+
+
+footer{
+  background-color: #410B13;
+  color: #EBF2FA;
+}
