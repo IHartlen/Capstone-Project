@@ -29,9 +29,22 @@ h2{
 /*hamburger nav*/
 .overlay{
   display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  opacity:1;
+  background-color: #0000;
+  transition: 3s;
+  color:black;
 }
 
-
+.show{
+  display:block;
+  background-color: #FBFCFE;
+  opacity: .9;
+  height:100%;
+  width:100%;
+}
 
 /*banner*/
 .banner {
