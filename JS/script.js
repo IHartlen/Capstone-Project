@@ -17,11 +17,13 @@ function GetQuote(){
   // $("#plato").toggleClass(".fade");
   var quote = plato[Math.floor(Math.random() * plato.length)];
   $(".quote").html("" + quote + "");
+  $(".quote").css("visibility" , "visible");
   console.log(quote);
 }
 
 function RemoveQuote(){
-  $(".quote").html("");
+  // $(".quote").html("");
+  $(".quote").css("visibility" , "hidden"); 
 }
 
 $(".img-books").on('mouseover', GetQuote)
