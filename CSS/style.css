@@ -65,10 +65,17 @@ h2{
   width:50%;
   flex:none;
 }
+.carousel-blurb h2{
+  text-align: left;
+  padding:2em;
+}
 .img-books{
-  /*max-width: 50%;*/
+  /*width: 7em;*/
   height: 15em;
   margin:0.5em;
+}
+#the-republic{
+  background-color: #0000;
 }
 .more-thinkers{
   background-color: #C5283D;
@@ -79,10 +86,18 @@ h2{
   padding-right:4em;
   text-align:center;
 }
-.carousel-blurb h2{
-  text-align: left;
-  padding:2em;
+
+/*apply gradient + add quote to images on hover*/
+.fade{
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, .35) 0%,
+    rgba(0, 0, 0, .25) 100%
+    );
 }
+
+
+
 
 /*Rates*/
 
