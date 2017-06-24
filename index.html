@@ -19,16 +19,16 @@
 <header class="header-flex">
   <span>Great Books Toronto</span>
 
-  <a class="hamburger" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+  <a class="hamburger link" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
   <div class="overlay">
     <div class="overlay-content">
       <a class="close-nav" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
         <nav class="overlay-menu">
           <ul>
-            <li>About</li>
-            <li>Great Books</li>
-            <li>Rates</li>
+            <li><a>About</a></li>
+            <li><a>Great Books</a></li>
+            <li><a>Rates</a></li>
           </ul>
         </nav>
     </div>
@@ -40,51 +40,53 @@
 <main>
   <section class="banner">
     <h1>Master big ideas in philosophy and political theory</h1>
-    <a href="#">About us</a>
-    <!-- <p>Puzzled with Plato? Hung up over Hobbes?</p> -->
-    <!-- <button class="btn-bookme" type="button" name="button">Book a Session</button> -->
+    <a class="link" href="#">About us</a>
   </section>
 
   <section class="carousel">
       <div class="carousel-blurb">
         <h2>What are you reading?
-          <a>Let me help</a>
+          <a class="link" href="#">Let us help</a>
         </h2>
       </div>
-
-      <!-- <div class="carousel-images"> -->
         <!-- put images of books here -->
-        <div>
-            <div id="the-republic"><img class="img-books" src="assets/The-Republic.jpg"></div>
-            <p>The Repbulic </p>
-            <span class="quote"></span>
+        <div id="the-republic" class="carousel-item">
+            <img class="img-books" src="assets/The-Republic.jpg">
+            <h3>Plato</h3>
+            <p class="quote"></p>
         </div>
-        <div>
+        <div id="politics" class="carousel-item">
           <img class="img-books" src="assets/Politics.jpg">
-          <p>blurb</p>
+          <h3>Aristotle</h3>
+          <p class="quote"></p>
         </div>
-        <div>
+        <div id="the-prince" class="carousel-item">
           <img class="img-books" src="assets/The-Prince.jpg">
-          <p>blurb</p>
+          <h3>Nicolo Machiavelli</h3>
+          <p class="quote"></p>
         </div>
-        <div>
+        <div id="leviathan" class="carousel-item">
           <img class="img-books" src="assets/Hobbes.jpg">
-          <p>blurb</p>
+          <h3>Thomas Hobbes</h3>
+          <p class="quote"></p>
         </div>
-        <div>
+        <div id="social-contract" class="carousel-item">
           <img class="img-books" src="assets/social-contract.jpg">
-          <p>blurb</p>
+          <h3>Jean-Jacques Rousseau</h3>
+          <p class="quote"></p>
         </div>
-        <div>
+        <div id="Nietzsche" class="carousel-item">
           <img class="img-books" src="assets/BGE.jpg">
-          <p>blurb</p>
+          <h3>Freiderich Nietzsche</h3>
+          <p class="quote"></p>
         </div>
-        <div>
+        <div id="Strauss" class="carousel-item">
           <img class="img-books" src="assets/On-Tyranny.jpg">
-          <p>blurb</p>
+          <h3>Leo Strauss</h3>
+          <p class="quote"></p>
         </div>
         <div class="more-thinkers img-books">
-            <a>More...</a>
+            <a class="link" href="#">More...</a>
         </div>
       <!-- </div> -->
 
