@@ -1,8 +1,10 @@
 
 var plato =[
-  '"Now listen," he said. "I say that the just is nothing other than the advantage of the stronger."',
   '"The idea of the good is the greatest study"' ,
-  '"Dont you believe that the true pilot will really be called a stargazer?"'
+  '"Dont you believe that the true pilot will really be called a stargazer?"',
+  '"As being is to becoming, so is pure intellect to opinion"',
+  '"The power and capacity of learning exists in the soul already"',
+  '"I propose therefore that we enquire into the nature of justice and injustice"'
 ]
 
 var aristotle = [
@@ -10,20 +12,19 @@ var aristotle = [
   '"Nature does nothing uselessly"',
 ]
 
-// var quote = plato[Math.floor(Math.random() * plato.length)];
 
 
 function GetQuote(){
-  // $("#plato").toggleClass(".fade");
   var quote = plato[Math.floor(Math.random() * plato.length)];
   $(".quote").html("" + quote + "");
-  $(".quote").css("visibility" , "visible");
+  // $(".quote").css("visibility" , "visible");
+  $(".quote").css("opacity" , "1");
   console.log(quote);
 }
 
 function RemoveQuote(){
   // $(".quote").html("");
-  $(".quote").css("visibility" , "hidden"); 
+  $(".quote").css("opacity" , "0");
 }
 
 $(".img-books").on('mouseover', GetQuote)
