@@ -6,8 +6,14 @@
 }
 @font-face {
   font-family: 'JosefinSans';
-  src: url('fonts/josefinsans/JosefinSans-Regular.ttf') format('truetype');
+  src: url('fonts/josefinsans/JosefinSans-light.ttf') format('truetype');
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JosefinSans';
+  src: url('fonts/josefinsans/JosefinSans-regular.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -16,7 +22,7 @@ body{
   font-family: 'JosefinSans';
   font-size: 16px;
   line-height: 32px;
-  background-color: #FBFCFE;
+  background-color: #F7F7FF;
 }
 h1{
   font-family: 'JosefinSlab';
@@ -24,18 +30,21 @@ h1{
   text-align: center;
 }
 h2{
-  font-size: 1.75em;
+  font-size: 2em;
   text-align: center;
 }
 h3{
-  font-size: 1.25em;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-bottom: 0.1em;
+  transition: color .5s ease;
 }
 p{
  line-height: 1.25em;
 }
 .link{
   text-decoration: none;
-  color: red;
+  color: #F0A202;
 }
 
 /*header*/
@@ -83,9 +92,12 @@ p{
 .banner {
   text-align: center;
   line-height: 4em;
-  padding-top:5em;
-  padding-bottom:11em;
+  padding-top:8em;
+  padding-bottom:10em;
   margin:0.6em;
+}
+.banner a{
+  font-size: 1.25em;
 }
 
 /*carousel*/
@@ -93,35 +105,43 @@ p{
   display:flex;
   flex-flow: row nowrap;
   overflow-x: auto;
-  background-color: #6B717E;
+  background-color: #36587D;
   height: 80vh;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 .carousel-blurb{
-  width:50%;
+  color: #EBF2FA;
+  width:70%;
   flex:none;
 }
 .carousel-blurb h2{
   text-align: left;
+  line-height: 1.2em;
   padding:2em;
+  padding-top: 3em;
 }
 .carousel-item{
   margin:1em;
+  color: #EBF2FA;
 }
 .carousel-item p{
-
+  font-size: 1.2em;
+  line-height: 1.2em;
 }
 .img-books{
   height: 60vh;
 }
 .more-thinkers{
-  background-color: #C5283D;
   border:0.5em;
   border-right: 1em;
 }
-.more-thinkers a{
-  padding-left:4em;
-  padding-right:4em;
-  text-align:center;
+.more-thinkers h2{
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: center;
+  padding-top: 3em;
+  font-size: 4em;
 }
 
 /*apply gradient + add quote to images on hover*/
@@ -129,7 +149,7 @@ p{
   /*visibility: hidden;*/
   opacity: 0;
   height:4em;
-  transition: visibility 3s, opacity .5s;
+  transition: visibility 3s, opacity .5s ease-in;
 }
 
 
