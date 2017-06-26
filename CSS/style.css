@@ -30,8 +30,10 @@ h1{
   text-align: center;
 }
 h2{
-  font-size: 2em;
+  font-weight: bold;
+  font-size: 2.5em;
   text-align: center;
+  line-height: 1em;
 }
 h3{
   font-weight: bold;
@@ -41,6 +43,9 @@ h3{
 }
 p{
  line-height: 1.25em;
+}
+cite{
+  font-weight: bold;
 }
 .link{
   text-decoration: none;
@@ -63,6 +68,7 @@ p{
 }
 .overlay{
   position:fixed;
+  z-index: 100;
   visibility: hidden;
   top:0;
   left:0;
@@ -118,8 +124,8 @@ p{
 .carousel-blurb h2{
   text-align: left;
   line-height: 1.2em;
-  padding:2em;
-  padding-top: 3em;
+  padding:1.2em;
+  padding-top: 2em;
 }
 .carousel-item{
   margin:1em;
@@ -131,6 +137,11 @@ p{
 }
 .img-books{
   height: 60vh;
+  transition: all 1s ease-in-out;
+  box-shadow: 3px 3px 1px #000;
+}
+.img-books:hover{
+  transform: scale(1.025);
 }
 .more-thinkers{
   border:0.5em;
@@ -144,26 +155,148 @@ p{
   font-size: 4em;
 }
 
-/*apply gradient + add quote to images on hover*/
+/*scale + add quote to carousel items on hover*/
 .quote{
-  /*visibility: hidden;*/
   opacity: 0;
   height:4em;
-  transition: visibility 3s, opacity .5s ease-in;
+  transition: opacity .5s ease-in;
 }
 
-
-
-/*Rates*/
-
+/*rates*/
+.rates{
+  height: 80vh;
+  margin:1em;
+  text-align: center;
+}
 .rates h2{
-  margin:2em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+.promo-text{
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
+.mailto{
+  text-align: center;
+  font-size: 1.5em;
+}
+.mailto:hover{
+  text-decoration: underline;
+}
 
+/*testimonial slider*/
+.testimonial {
+	width: 80%;
+	margin: 70px auto;
+}
 
-
+/*footer*/
 footer{
   background-color: #410B13;
   color: #EBF2FA;
+  text-align: center;
+  padding: 1em;
+}
+footer a{
+  color: #EBF2FA;
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+
+/*About page*/
+.about{
+  margin: 0.5em;
+  text-align: center;
+}
+.about h2{
+  line-height: 1em;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+.about h3{
+  line-height: 1em;
+  text-align: left;
+}
+.profile{
+  border-radius:50%;
+  width: 25%;
+  height: 25%;
+  margin:1em;
+}
+.about-flex{
+  display: flex;
+  justify-content: space-around;
+  background-color: #36587D;
+  color: #EBF2FA;
+  margin-top: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: left;
+}
+.bio{
+  line-height: 1.25em;
+}
+.ian:hover{
+  color: #F0A202;
+}
+
+/*Book Me Page*/
+
+
+/*tablet*/
+@media (min-width: 600px) {
+.banner{
+  padding-bottom: 13em;
+}
+
+.carousel-blurb h2 {
+  font-size: 3em;
+  padding: 3em;
+  padding-top: 2em;
+}
+.rates {
+  height: 400px;
+  margin-left: 8em;
+  margin-right: 8em;
+}
+.about{
+  margin-left: 2.5em;
+  margin-right:2.5em;
+}
+.about-flex{
+  align-items: center;
+  justify-content: space-between;
+}
+.bio{
+    margin-right: 13em;
+}
+.profile{
+  padding-top: 0em;
+  width: 15%;
+  margin-left: 6em;
+}
+
+/*desktop*/
+@media (min-width: 1140px) {
+h1{
+  font-size: 5em;
+    line-height: 1.25em;
+}
+.banner{
+  padding-bottom: 13em;
+}
+.banner a{
+  font-size: 1.5em;
+}
+.promo-text{
+  padding-left: 5em;
+  padding-right: 5em;
+}
+.carousel-blurb{
+  width:50%;
 }
