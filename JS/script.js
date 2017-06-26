@@ -1,4 +1,5 @@
 
+// quote arrays
 var plato =[
   '"The idea of the good is the greatest study"' ,
   '"Dont you believe that the true pilot will really be called a stargazer?"',
@@ -9,7 +10,7 @@ var plato =[
 var aristotle = [
   '"Man is by nature a poltical animal"',
   '"Nature does nothing uselessly"',
-  '"For friendship we beleive to be the greatest good of states"'
+  '"For friendship we believe to be the greatest good of states"'
 ]
 var machiavelli = [
   '"Is it better to be loved than feared, or vice versa?"',
@@ -17,7 +18,8 @@ var machiavelli = [
 ]
 var hobbes = [
   '“The first and fundamental law of Nature, which is, to seek peace and follow it.”',
-
+  '"Covenants without the sword are but words and of no strength to secure a man at all."',
+  '"The passions of men are commonly more potent than their reason.""'
 ]
 var rousseau = [
   '"Man was born free, and everywhere he is in chains"',
@@ -29,25 +31,15 @@ var nietzsche = [
   '"In all desire to know there is already a drop of cruelty"',
   '"Does one not write books precisely to conceal what lies within us?"',
   '"Perhaps no one has ever been sufficiently truthful about what truthfulness is"',
-  '"He who fights with monsters should look to it that he himself does not become a monster. And when you gaze long into an abyss the abyss also gazes into you"'
+  '"He who fights with monsters should look to it that he himself does not become a monster."'
 ]
 var strauss = [
   '"The conflict of the philosopher confronted with the tyrant is nothing else than the conflict of the intellectual faced with action."',
   '"Tyranny is a danger coeval with political life"',
   '"There is a disproption between the intransigent quest for truth and the requirements of society"'
 ]
-// var quotes = {
-//   plato: [
-//     '"The idea of the good is the greatest study"' ,
-//     '"Dont you believe that the true pilot will really be called a stargazer?"',
-//   ]
-//   aristotle: [
-//     '"Man is by nature a poltical animal"',
-//     '"Nature does nothing uselessly"',
-//   ]
-// }
 
-
+// GetQuote functions
 function GetQuote1(){
   var quote = plato[Math.floor(Math.random() * plato.length)];
   $("#quote1").html("" + quote + "");
